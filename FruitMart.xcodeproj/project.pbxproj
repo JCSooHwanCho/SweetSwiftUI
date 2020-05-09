@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42E366092466E11B009A4D17 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E366082466E11B009A4D17 /* ProductRow.swift */; };
 		5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EACB240BAC920079E99D /* AppDelegate.swift */; };
 		5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EACD240BAC920079E99D /* SceneDelegate.swift */; };
 		5238EAD0240BAC920079E99D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EACF240BAC920079E99D /* Home.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42E366082466E11B009A4D17 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		5238EAC8240BAC920079E99D /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5238EACB240BAC920079E99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5238EACD240BAC920079E99D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				5238EACF240BAC920079E99D /* Home.swift */,
+				42E366082466E11B009A4D17 /* ProductRow.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E366092466E11B009A4D17 /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
