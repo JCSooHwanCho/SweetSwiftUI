@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42E366092466E11B009A4D17 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E366082466E11B009A4D17 /* ProductRow.swift */; };
+		42E3660C2466F2AE009A4D17 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E3660B2466F2AE009A4D17 /* ColorExtension.swift */; };
 		5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EACB240BAC920079E99D /* AppDelegate.swift */; };
 		5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EACD240BAC920079E99D /* SceneDelegate.swift */; };
 		5238EAD0240BAC920079E99D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238EACF240BAC920079E99D /* Home.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		42E366082466E11B009A4D17 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		42E3660B2466F2AE009A4D17 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		5238EAC8240BAC920079E99D /* FruitMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5238EACB240BAC920079E99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5238EACD240BAC920079E99D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42E3660A2466F29B009A4D17 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				42E3660B2466F2AE009A4D17 /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		5238EABF240BAC910079E99D = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		5238EAEC240BF9FE0079E99D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				42E3660A2466F29B009A4D17 /* Extension */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -221,6 +232,7 @@
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
+				42E3660C2466F2AE009A4D17 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
