@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ProductRow: View {
+    let product: Product
+
     var body: some View {
         HStack {
             productImage
@@ -25,13 +27,13 @@ struct ProductRow: View {
 
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProductRow()
+        ProductRow(product: productSample[0])
     }
 }
 
 extension ProductRow {
     var productImage: some View {
-        Image("apple")
+        Image(self.product.imageName)
             .resizable()
             .scaledToFill()
             .frame(width: 140)
@@ -40,12 +42,12 @@ extension ProductRow {
 
     var productDescription: some View {
         VStack {
-            Text("백설공주 사과")
+            Text(self.product.name)
                 .font(.headline)
                 .fontWeight(.medium)
                 .padding(.bottom, 6)
 
-            Text("달콤한 맛이 좋은 과일의 여왕 사과. 독은 없고 꿀만 가득해요!")
+            Text(self.product.description)
                 .font(.footnote)
                 .foregroundColor(.secondaryText)
 
@@ -57,7 +59,7 @@ extension ProductRow {
 
     var footerView: some View {
         HStack(spacing: 0) {
-            Text("2100").font(.headline) + Text("원").font(.footnote)
+            Text("\(self.product.price)").font(.headline) + Text("원").font(.footnote)
 
             Spacer()
 

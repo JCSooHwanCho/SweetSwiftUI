@@ -11,9 +11,9 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         VStack {
-            ProductRow()
-            ProductRow()
-            ProductRow()
+            ProductRow(product: productSample[0])
+            ProductRow(product: productSample[1])
+            ProductRow(product: productSample[2])
         }
     }
 }
