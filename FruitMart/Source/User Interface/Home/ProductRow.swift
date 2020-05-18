@@ -54,7 +54,7 @@ extension ProductRow {
             Spacer()
 
             footerView
-        }
+        }.frame(height: 150)
     }
 
     var footerView: some View {
