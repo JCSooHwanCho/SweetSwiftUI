@@ -27,7 +27,15 @@ struct ProductRow: View {
 
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
+        Group {
+            ForEach(productSample) {
+                ProductRow(product: $0)
+            }
         ProductRow(product: productSample[0])
+            .preferredColorScheme(.dark)
+        }
+        .padding()
+        .previewLayout(.sizeThatFits)
     }
 }
 
