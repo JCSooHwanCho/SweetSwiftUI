@@ -10,7 +10,8 @@ import SwiftUI
 
 struct QuantitySelector: View {
     @Binding var quantity: Int
-    
+    private let softFeedback = UIImpactFeedbackGenerator(style: .soft)
+    private let rigidFeedback = UIImpactFeedbackGenerator(style: .rigid)
     var range = 1...20
 
     var body: some View {
@@ -39,6 +40,11 @@ struct QuantitySelector: View {
     private func changeQuantity(_ num: Int) {
         if range ~= quantity + num {
             quantity += num
+            softFeedback.prepare()
+            softFeedback.impactOccurred(intensity: 0.8)
+        } else {
+            rigidFeedback.prepare()
+            rigidFeedback.impactOccurred()
         }
     }
 }
