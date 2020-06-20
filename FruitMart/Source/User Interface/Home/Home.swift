@@ -9,8 +9,7 @@
 import SwiftUI
 
 struct Home: View {
-    let store: Store
-
+    @EnvironmentObject private var store: Store
     var body: some View {
         NavigationView {
             List(store.products) { product in
@@ -25,7 +24,8 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Preview(source: Home(store: Store()))
+        Preview(source: Home())
+        .environmentObject(Store())
     }
 }
 
