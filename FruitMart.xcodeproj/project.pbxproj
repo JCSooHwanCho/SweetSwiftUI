@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4202E4D4249F0A6600E78403 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E4D3249F0A6600E78403 /* Symbol.swift */; };
+		4202E4D6249F0CB000E78403 /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E4D5249F0CB000E78403 /* ResizedImage.swift */; };
 		421DE1BA24700116005433DD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DE1B924700116005433DD /* Product.swift */; };
 		421DE1BC24724CBF005433DD /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DE1BB24724CBF005433DD /* BundleExtension.swift */; };
 		421DE1BE24725316005433DD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DE1BD24725316005433DD /* Store.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4202E4D3249F0A6600E78403 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		4202E4D5249F0CB000E78403 /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
 		421DE1B924700116005433DD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		421DE1BB24724CBF005433DD /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		421DE1BD24725316005433DD /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				424A015D2496036900DF776A /* Preview.swift */,
+				4202E4D3249F0A6600E78403 /* Symbol.swift */,
+				4202E4D5249F0CB000E78403 /* ResizedImage.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4202E4D6249F0CB000E78403 /* ResizedImage.swift in Sources */,
 				42E366092466E11B009A4D17 /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
 				424A015E2496036900DF776A /* Preview.swift in Sources */,
@@ -271,6 +278,7 @@
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
 				423D1ED2249E2A2100B01922 /* Order.swift in Sources */,
+				4202E4D4249F0A6600E78403 /* Symbol.swift in Sources */,
 				42E3660C2466F2AE009A4D17 /* ColorExtension.swift in Sources */,
 				421DE1C0247269A6005433DD /* ProductDetailView.swift in Sources */,
 			);

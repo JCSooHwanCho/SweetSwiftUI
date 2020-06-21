@@ -41,9 +41,7 @@ struct ProductRow_Previews: PreviewProvider {
 
 extension ProductRow {
     var productImage: some View {
-        Image(self.product.imageName)
-            .resizable()
-            .scaledToFill()
+        ResizedImage(imageName: self.product.imageName)
             .frame(width: 140)
             .clipped()
     }
