@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct ProductRow: View {
+    @EnvironmentObject var store: Store
     let product: Product
-
+    @Binding var quickOrder: Product?
+    
     var body: some View {
         HStack {
             productImage
@@ -29,9 +31,9 @@ struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ForEach(productSample) {
-                ProductRow(product: $0)
+                ProductRow(product: $0, quickOrder: .constant(nil))
             }
-        ProductRow(product: productSample[0])
+            ProductRow(product: productSample[0], quickOrder: .constant(nil))
             .preferredColorScheme(.dark)
         }
         .padding()
@@ -70,9 +72,14 @@ extension ProductRow {
             Spacer()
 
             FavoriteButton(product: product)
-            Image(systemName: "cart")
-                .foregroundColor(.peach)
+            Symbol("cart", color: .peach)
                 .frame(width: 32, height: 32)
+                .onTapGesture { self.orderProduct() }
         }
+    }
+
+    func orderProduct() {
+        quickOrder = product
+        store.placeOrder(product: product, quantity: 1)
     }
 }
