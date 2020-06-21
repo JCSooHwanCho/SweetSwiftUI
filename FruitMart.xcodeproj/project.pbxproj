@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4202E4D4249F0A6600E78403 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E4D3249F0A6600E78403 /* Symbol.swift */; };
 		4202E4D6249F0CB000E78403 /* ResizedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E4D5249F0CB000E78403 /* ResizedImage.swift */; };
+		4202E4D9249F128400E78403 /* ShrinkButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E4D8249F128400E78403 /* ShrinkButtonStyle.swift */; };
+		4202E4DC249F2B4900E78403 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E4DB249F2B4900E78403 /* Popup.swift */; };
+		4202E4DE249F52B200E78403 /* OrderCompletedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4202E4DD249F52B200E78403 /* OrderCompletedMessage.swift */; };
 		421DE1BA24700116005433DD /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DE1B924700116005433DD /* Product.swift */; };
 		421DE1BC24724CBF005433DD /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DE1BB24724CBF005433DD /* BundleExtension.swift */; };
 		421DE1BE24725316005433DD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DE1BD24725316005433DD /* Store.swift */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		4202E4D3249F0A6600E78403 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		4202E4D5249F0CB000E78403 /* ResizedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizedImage.swift; sourceTree = "<group>"; };
+		4202E4D8249F128400E78403 /* ShrinkButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkButtonStyle.swift; sourceTree = "<group>"; };
+		4202E4DB249F2B4900E78403 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		4202E4DD249F52B200E78403 /* OrderCompletedMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCompletedMessage.swift; sourceTree = "<group>"; };
 		421DE1B924700116005433DD /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		421DE1BB24724CBF005433DD /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		421DE1BD24725316005433DD /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -63,6 +69,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4202E4D7249F11F300E78403 /* CustomStyle */ = {
+			isa = PBXGroup;
+			children = (
+				4202E4D8249F128400E78403 /* ShrinkButtonStyle.swift */,
+			);
+			path = CustomStyle;
+			sourceTree = "<group>";
+		};
+		4202E4DA249F2B1900E78403 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				4202E4DB249F2B4900E78403 /* Popup.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
 		424A015C2496035100DF776A /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +203,7 @@
 				421DE1BF247269A6005433DD /* ProductDetailView.swift */,
 				424358DF249CE5670039C0A3 /* QuantitySelector.swift */,
 				423D1ECF249E20A100B01922 /* FavoriteButton.swift */,
+				4202E4DD249F52B200E78403 /* OrderCompletedMessage.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -188,6 +211,8 @@
 		5238EAEC240BF9FE0079E99D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				4202E4DA249F2B1900E78403 /* ViewModifier */,
+				4202E4D7249F11F300E78403 /* CustomStyle */,
 				424A015C2496035100DF776A /* CustomView */,
 				42E3660A2466F29B009A4D17 /* Extension */,
 			);
@@ -274,12 +299,15 @@
 				424358E0249CE5670039C0A3 /* QuantitySelector.swift in Sources */,
 				421DE1BA24700116005433DD /* Product.swift in Sources */,
 				421DE1BE24725316005433DD /* Store.swift in Sources */,
+				4202E4DC249F2B4900E78403 /* Popup.swift in Sources */,
 				421DE1BC24724CBF005433DD /* BundleExtension.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
 				5238EAD0240BAC920079E99D /* Home.swift in Sources */,
+				4202E4DE249F52B200E78403 /* OrderCompletedMessage.swift in Sources */,
 				423D1ED2249E2A2100B01922 /* Order.swift in Sources */,
 				4202E4D4249F0A6600E78403 /* Symbol.swift in Sources */,
 				42E3660C2466F2AE009A4D17 /* ColorExtension.swift in Sources */,
+				4202E4D9249F128400E78403 /* ShrinkButtonStyle.swift in Sources */,
 				421DE1C0247269A6005433DD /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

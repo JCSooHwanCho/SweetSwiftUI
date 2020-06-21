@@ -11,6 +11,7 @@ import SwiftUI
 struct ProductDetailView: View {
     @EnvironmentObject private var store: Store
     @State private var quantity: Int = 1
+    @State private var showingPopup: Bool = false
     @State private var showingAlert: Bool = false
 
     let product: Product
@@ -19,8 +20,9 @@ struct ProductDetailView: View {
         VStack(spacing: 0) {
             productImage
             orderView
-        }.edgesIgnoringSafeArea(.top)
-            .alert(isPresented: $showingAlert) { confirmAlert }
+        }.popup(isPresented: $showingPopup) { OrderCompletedMessage() }
+        .edgesIgnoringSafeArea(.top)
+        .alert(isPresented: $showingAlert) { confirmAlert }
     }
 
     var productImage: some View {
@@ -87,7 +89,7 @@ struct ProductDetailView: View {
                     .fontWeight(.medium)
                     .foregroundColor(.white))
                 .padding(.vertical, 8)
-        }
+        }.buttonStyle(ShrinkButtonStyle())
     }
 
     var confirmAlert: Alert {
@@ -118,6 +120,7 @@ struct ProductDetailView: View {
 
     func placeOrder() {
         store.placeOrder(product: product, quantity: quantity)
+        showingPopup = true
     }
 }
 
