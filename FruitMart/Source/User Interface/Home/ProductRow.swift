@@ -49,7 +49,7 @@ extension ProductRow {
     }
 
     var productDescription: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text(self.product.name)
                 .font(.headline)
                 .fontWeight(.medium)
@@ -62,7 +62,8 @@ extension ProductRow {
             Spacer()
 
             footerView
-        }.frame(height: 150)
+            }.padding()
+        .frame(height: 150)
     }
 
     var footerView: some View {

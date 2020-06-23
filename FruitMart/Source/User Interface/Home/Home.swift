@@ -11,15 +11,18 @@ import SwiftUI
 struct Home: View {
     @EnvironmentObject private var store: Store
     @State private var quickOrder: Product?
-
+    @State private var showingFavoriteImage: Bool = true
     var body: some View {
         NavigationView {
-            List(store.products) { product in
-                NavigationLink(destination: ProductDetailView(product: product)) {
-                    ProductRow(product: product, quickOrder: self.$quickOrder)
+
+            VStack {
+                if showFavorite {
+                    favoriteProducts
                 }
+                darkerDivider
+                productList
             }.navigationBarTitle("과일마트")
-                
+            
         }.popupOverContext(item: $quickOrder,
                            style: .blur,
                            content: popupMessage(product:))
@@ -36,6 +39,31 @@ struct Home: View {
 
             OrderCompletedMessage()
         }
+    }
+
+    var favoriteProducts: some View {
+        FavoriteProductScrollView(showingImage: $showingFavoriteImage)
+            .padding(.top, 24)
+            .padding(.bottom, 8)
+    }
+
+    var darkerDivider: some View {
+        Color.primary
+            .opacity(0.3)
+            .frame(maxWidth: .infinity, maxHeight: 1)
+    }
+
+    var productList: some View {
+        List(store.products) { product in
+            NavigationLink(destination: ProductDetailView(product: product)) {
+                ProductRow(product: product, quickOrder: self.$quickOrder)
+            }
+
+        }
+    }
+
+    var showFavorite: Bool {
+        !store.products.filter(\.isFavorite).isEmpty
     }
 }
 
