@@ -19,6 +19,7 @@ struct FavoriteProductScrollView: View {
                 products
             }
         }.padding()
+        .transition(.slide)
     }
 
     var title: some View {
@@ -32,7 +33,11 @@ struct FavoriteProductScrollView: View {
 
             Spacer()
         }.padding(.bottom, 8)
-        .onTapGesture { self.showingImage.toggle() }
+        .onTapGesture {
+            withAnimation {
+                self.showingImage.toggle()
+            }
+        }
     }
 
     var products: some View {
@@ -45,7 +50,7 @@ struct FavoriteProductScrollView: View {
                     }
                 }
             }
-        }
+        }.animation(.spring(dampingFraction: 0.78))
     }
 
     func eachProduct(_ product: Product) -> some View {
