@@ -63,6 +63,8 @@ struct RecipeView: View {
             ResizedImage(imageName: recipes[currentIndex].imageName,
                          contentMode: .fit)
                 .padding(.horizontal)
+                .transition(.stripes())
+                .id(currentIndex)
 
             Spacer()
 
