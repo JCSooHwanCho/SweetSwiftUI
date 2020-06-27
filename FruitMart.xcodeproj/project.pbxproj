@@ -21,6 +21,8 @@
 		4227365A24A6ED3B00387764 /* Stripes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227365924A6ED3B00387764 /* Stripes.swift */; };
 		4227365C24A6EEDE00387764 /* ShapeClipModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227365B24A6EEDE00387764 /* ShapeClipModifier.swift */; };
 		4227365E24A6F2BF00387764 /* AnyTransitionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227365D24A6F2BF00387764 /* AnyTransitionExtension.swift */; };
+		4227366124A707E100387764 /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227366024A707E100387764 /* FruitCard.swift */; };
+		4227366324A70AE300387764 /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227366224A70AE300387764 /* ImageGallery.swift */; };
 		423D1ED0249E20A100B01922 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D1ECF249E20A100B01922 /* FavoriteButton.swift */; };
 		423D1ED2249E2A2100B01922 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D1ED1249E2A2100B01922 /* Order.swift */; };
 		424358E0249CE5670039C0A3 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424358DF249CE5670039C0A3 /* QuantitySelector.swift */; };
@@ -53,6 +55,8 @@
 		4227365924A6ED3B00387764 /* Stripes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stripes.swift; sourceTree = "<group>"; };
 		4227365B24A6EEDE00387764 /* ShapeClipModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeClipModifier.swift; sourceTree = "<group>"; };
 		4227365D24A6F2BF00387764 /* AnyTransitionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExtension.swift; sourceTree = "<group>"; };
+		4227366024A707E100387764 /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
+		4227366224A70AE300387764 /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
 		423D1ECF249E20A100B01922 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		423D1ED1249E2A2100B01922 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		424358DF249CE5670039C0A3 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 				4227365724A6E4A600387764 /* RecipeView.swift */,
 			);
 			path = Recipe;
+			sourceTree = "<group>";
+		};
+		4227365F24A707CE00387764 /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				4227366024A707E100387764 /* FruitCard.swift */,
+				4227366224A70AE300387764 /* ImageGallery.swift */,
+			);
+			path = ImageGallery;
 			sourceTree = "<group>";
 		};
 		424A015C2496035100DF776A /* CustomView */ = {
@@ -187,6 +200,7 @@
 		5238EAE1240BAD5D0079E99D /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				4227365F24A707CE00387764 /* ImageGallery */,
 				5238EAE5240BAE840079E99D /* Home */,
 				4227365624A6E48100387764 /* Recipe */,
 				4254FEC924A3949500081D2B /* MainTabView.swift */,
@@ -320,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4227366324A70AE300387764 /* ImageGallery.swift in Sources */,
 				426B866D24A1FAC8009BB412 /* FavoriteProductScrollView.swift in Sources */,
 				4202E4D6249F0CB000E78403 /* ResizedImage.swift in Sources */,
 				4227365C24A6EEDE00387764 /* ShapeClipModifier.swift in Sources */,
@@ -332,6 +347,7 @@
 				424358E0249CE5670039C0A3 /* QuantitySelector.swift in Sources */,
 				421DE1BA24700116005433DD /* Product.swift in Sources */,
 				421DE1BE24725316005433DD /* Store.swift in Sources */,
+				4227366124A707E100387764 /* FruitCard.swift in Sources */,
 				4227365524A6E36800387764 /* Recipe.swift in Sources */,
 				4202E4DC249F2B4900E78403 /* Popup.swift in Sources */,
 				421DE1BC24724CBF005433DD /* BundleExtension.swift in Sources */,
