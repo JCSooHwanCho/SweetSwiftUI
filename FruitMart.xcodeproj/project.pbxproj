@@ -16,6 +16,8 @@
 		421DE1BC24724CBF005433DD /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DE1BB24724CBF005433DD /* BundleExtension.swift */; };
 		421DE1BE24725316005433DD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DE1BD24725316005433DD /* Store.swift */; };
 		421DE1C0247269A6005433DD /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DE1BF247269A6005433DD /* ProductDetailView.swift */; };
+		4227365524A6E36800387764 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227365424A6E36800387764 /* Recipe.swift */; };
+		4227365824A6E4A600387764 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227365724A6E4A600387764 /* RecipeView.swift */; };
 		423D1ED0249E20A100B01922 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D1ECF249E20A100B01922 /* FavoriteButton.swift */; };
 		423D1ED2249E2A2100B01922 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D1ED1249E2A2100B01922 /* Order.swift */; };
 		424358E0249CE5670039C0A3 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424358DF249CE5670039C0A3 /* QuantitySelector.swift */; };
@@ -43,6 +45,8 @@
 		421DE1BB24724CBF005433DD /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		421DE1BD24725316005433DD /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		421DE1BF247269A6005433DD /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		4227365424A6E36800387764 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		4227365724A6E4A600387764 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		423D1ECF249E20A100B01922 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		423D1ED1249E2A2100B01922 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		424358DF249CE5670039C0A3 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
@@ -87,6 +91,14 @@
 				4202E4DB249F2B4900E78403 /* Popup.swift */,
 			);
 			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		4227365624A6E48100387764 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				4227365724A6E4A600387764 /* RecipeView.swift */,
+			);
+			path = Recipe;
 			sourceTree = "<group>";
 		};
 		424A015C2496035100DF776A /* CustomView */ = {
@@ -167,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				5238EAE5240BAE840079E99D /* Home */,
+				4227365624A6E48100387764 /* Recipe */,
 				4254FEC924A3949500081D2B /* MainTabView.swift */,
 			);
 			path = "User Interface";
@@ -196,6 +209,7 @@
 				421DE1B924700116005433DD /* Product.swift */,
 				421DE1BD24725316005433DD /* Store.swift */,
 				423D1ED1249E2A2100B01922 /* Order.swift */,
+				4227365424A6E36800387764 /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,11 +315,13 @@
 				4202E4D6249F0CB000E78403 /* ResizedImage.swift in Sources */,
 				42E366092466E11B009A4D17 /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
+				4227365824A6E4A600387764 /* RecipeView.swift in Sources */,
 				424A015E2496036900DF776A /* Preview.swift in Sources */,
 				423D1ED0249E20A100B01922 /* FavoriteButton.swift in Sources */,
 				424358E0249CE5670039C0A3 /* QuantitySelector.swift in Sources */,
 				421DE1BA24700116005433DD /* Product.swift in Sources */,
 				421DE1BE24725316005433DD /* Store.swift in Sources */,
+				4227365524A6E36800387764 /* Recipe.swift in Sources */,
 				4202E4DC249F2B4900E78403 /* Popup.swift in Sources */,
 				421DE1BC24724CBF005433DD /* BundleExtension.swift in Sources */,
 				5238EACE240BAC920079E99D /* SceneDelegate.swift in Sources */,
