@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Product: Decodable, Equatable, Identifiable {
+struct Product: Codable, Equatable, Identifiable {
     let id: UUID = UUID()
     
     let name: String

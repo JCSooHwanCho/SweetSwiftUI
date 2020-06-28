@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Order: Identifiable {
-    static var orderSequence = sequence(first: 1) { $0 + 1 }
+struct Order: Identifiable, Codable {
+    static var orderSequence = sequence(first:  lastOrderID + 1) { $0 &+ 1 }
 
     let id: Int
     let product: Product
@@ -17,5 +17,10 @@ struct Order: Identifiable {
 
     var price: Int {
         product.price * quantity
+    }
+
+    static var lastOrderID: Int {
+        get { UserDefaults.standard.integer(forKey: "LastOrderID") }
+        set { UserDefaults.standard.set(newValue, forKey: "LastOrderID")}
     }
 }
