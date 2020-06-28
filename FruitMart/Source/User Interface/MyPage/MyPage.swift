@@ -12,6 +12,7 @@ struct MyPage: View {
     @EnvironmentObject var store: Store
     @State private var pickedImage: Image = Image(systemName: "person.crop.circle")
     @State private var nickname = ""
+    @State private var isPickerPresented: Bool = false
 
     private let pickerDataSource: [CGFloat] = [140, 150, 160]
 
@@ -26,6 +27,8 @@ struct MyPage: View {
                 }
                 .navigationBarTitle("마이페이지")
             }
+        }.sheet(isPresented: $isPickerPresented) {
+            ImagePickerView(pickedImage: self.$pickedImage)
         }
     }
 
@@ -75,7 +78,9 @@ struct MyPage: View {
     }
 
     var pickImageButton: some View {
-        Button(action: {}) {
+        Button(action: {
+            self.isPickerPresented = true
+        }) {
             Circle()
                 .fill(Color.white)
                 .frame(width: 32, height: 32)
