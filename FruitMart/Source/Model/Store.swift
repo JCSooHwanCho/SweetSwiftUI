@@ -55,6 +55,15 @@ final class Store: ObservableObject {
             return []
         }
     }
+
+    func deleteOrder(at indexes: IndexSet) {
+        guard let index = indexes.first else { return }
+        orders.remove(at: index)
+    }
+
+    func moveOrder(from indexes: IndexSet, to destination: Int) {
+        orders.move(fromOffsets: indexes, toOffset: destination)
+    }
 }
 
 extension Store {

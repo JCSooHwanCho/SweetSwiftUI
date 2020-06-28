@@ -21,6 +21,7 @@ struct OrderListView: View {
         }
         .animation(.default)
         .navigationBarTitle("주문 목록")
+        .navigationBarItems(trailing: editButton)
     }
 
     var emptyOrders: some View {
@@ -39,8 +40,13 @@ struct OrderListView: View {
         List {
             ForEach(store.orders) {
                 OrderRow(order: $0)
-            }
+            }.onDelete(perform: store.deleteOrder(at:))
+            .onMove(perform: store.moveOrder(from:to:))
         }
+    }
+
+    var editButton: some View {
+        !store.orders.isEmpty ? AnyView(EditButton()) : AnyView(EmptyView())
     }
 }
 
