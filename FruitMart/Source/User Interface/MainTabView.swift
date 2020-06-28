@@ -68,8 +68,9 @@ private extension MainTabView {
     }
 
     var myPage: some View {
-        Text("마이페이지")
+        MyPage()
             .tag(Tabs.myPage)
             .tabItem(image: "person", text: "마이페이지")
+            .onAppear { UITableView.appearance().separatorStyle = .singleLine }
     }
 }

@@ -23,6 +23,9 @@
 		4227365E24A6F2BF00387764 /* AnyTransitionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227365D24A6F2BF00387764 /* AnyTransitionExtension.swift */; };
 		4227366124A707E100387764 /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227366024A707E100387764 /* FruitCard.swift */; };
 		4227366324A70AE300387764 /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227366224A70AE300387764 /* ImageGallery.swift */; };
+		4227366624A856C700387764 /* MyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227366524A856C700387764 /* MyPage.swift */; };
+		4227366824A85A5B00387764 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227366724A85A5B00387764 /* OrderListView.swift */; };
+		4227366A24A85CEE00387764 /* OrderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227366924A85CEE00387764 /* OrderRow.swift */; };
 		423D1ED0249E20A100B01922 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D1ECF249E20A100B01922 /* FavoriteButton.swift */; };
 		423D1ED2249E2A2100B01922 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D1ED1249E2A2100B01922 /* Order.swift */; };
 		424358E0249CE5670039C0A3 /* QuantitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424358DF249CE5670039C0A3 /* QuantitySelector.swift */; };
@@ -57,6 +60,9 @@
 		4227365D24A6F2BF00387764 /* AnyTransitionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionExtension.swift; sourceTree = "<group>"; };
 		4227366024A707E100387764 /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
 		4227366224A70AE300387764 /* ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
+		4227366524A856C700387764 /* MyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPage.swift; sourceTree = "<group>"; };
+		4227366724A85A5B00387764 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		4227366924A85CEE00387764 /* OrderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRow.swift; sourceTree = "<group>"; };
 		423D1ECF249E20A100B01922 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		423D1ED1249E2A2100B01922 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		424358DF249CE5670039C0A3 /* QuantitySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantitySelector.swift; sourceTree = "<group>"; };
@@ -119,6 +125,16 @@
 				4227366224A70AE300387764 /* ImageGallery.swift */,
 			);
 			path = ImageGallery;
+			sourceTree = "<group>";
+		};
+		4227366424A856B400387764 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				4227366524A856C700387764 /* MyPage.swift */,
+				4227366724A85A5B00387764 /* OrderListView.swift */,
+				4227366924A85CEE00387764 /* OrderRow.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		424A015C2496035100DF776A /* CustomView */ = {
@@ -200,6 +216,7 @@
 		5238EAE1240BAD5D0079E99D /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				4227366424A856B400387764 /* MyPage */,
 				4227365F24A707CE00387764 /* ImageGallery */,
 				5238EAE5240BAE840079E99D /* Home */,
 				4227365624A6E48100387764 /* Recipe */,
@@ -337,9 +354,11 @@
 				4227366324A70AE300387764 /* ImageGallery.swift in Sources */,
 				426B866D24A1FAC8009BB412 /* FavoriteProductScrollView.swift in Sources */,
 				4202E4D6249F0CB000E78403 /* ResizedImage.swift in Sources */,
+				4227366824A85A5B00387764 /* OrderListView.swift in Sources */,
 				4227365C24A6EEDE00387764 /* ShapeClipModifier.swift in Sources */,
 				42E366092466E11B009A4D17 /* ProductRow.swift in Sources */,
 				5238EACC240BAC920079E99D /* AppDelegate.swift in Sources */,
+				4227366624A856C700387764 /* MyPage.swift in Sources */,
 				4227365824A6E4A600387764 /* RecipeView.swift in Sources */,
 				4227365E24A6F2BF00387764 /* AnyTransitionExtension.swift in Sources */,
 				424A015E2496036900DF776A /* Preview.swift in Sources */,
@@ -359,6 +378,7 @@
 				4202E4D4249F0A6600E78403 /* Symbol.swift in Sources */,
 				42E3660C2466F2AE009A4D17 /* ColorExtension.swift in Sources */,
 				4202E4D9249F128400E78403 /* ShrinkButtonStyle.swift in Sources */,
+				4227366A24A85CEE00387764 /* OrderRow.swift in Sources */,
 				421DE1C0247269A6005433DD /* ProductDetailView.swift in Sources */,
 				4254FECA24A3949500081D2B /* MainTabView.swift in Sources */,
 			);
