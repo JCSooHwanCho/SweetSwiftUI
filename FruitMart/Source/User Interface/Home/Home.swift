@@ -69,6 +69,7 @@ struct Home: View {
 
     var showFavorite: Bool {
         !store.products.filter(\.isFavorite).isEmpty
+            && store.appSetting.showFavoriteList
     }
 }
 
